@@ -16,7 +16,7 @@ export class AppComponent {
 
 
   //Can declare values either way
-  userList: User[] = //any[] would have worked as well
+  userList: User[] =
     [
       {id: 1, firstName: "Matt", lastName: "Haug", department: "Programming", isAdmin: false},
       {id: 2, firstName: "Darren", lastName: "Takakki", department: "Web Dev", isAdmin: true},
@@ -28,8 +28,6 @@ export class AppComponent {
   toggleAdminStatus(user: User): void {
     user.isAdmin = !user.isAdmin;
   }
-
-
 
 
 
