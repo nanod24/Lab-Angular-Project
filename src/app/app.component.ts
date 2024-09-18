@@ -9,7 +9,7 @@ import {JsonPipe, NgForOf} from "@angular/common";
   standalone: true,
   imports: [RouterOutlet, NgForOf, JsonPipe],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title= 'User Generation';
