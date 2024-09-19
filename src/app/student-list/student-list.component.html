@@ -2,7 +2,7 @@
 <div>
   <table>
  <tbody>
- <tr *ngFor="let student of userList">
+ <tr *ngFor="let student of userList" (click)="selectStudent(student)">
    <td> {{ student.id }}</td>
    <td> {{ student.firstName }}</td>
    <td> {{ student.lastName }}</td>
@@ -11,6 +11,7 @@
  </tr>
  </tbody>
   </table>
+  <app-student-detail [student]="selectStudent"></app-student-detail>
 
 </div>
 
