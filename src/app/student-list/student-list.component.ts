@@ -19,5 +19,12 @@ export class StudentListComponent {
       {id: 2, firstName: "Darren", lastName: "Takakki", department: "Web Dev", isAdmin: true},
       {id: 3, firstName: "John", lastName: "Doe", department: "Programming", isAdmin: false},
       {id: 4, firstName: "Jane", lastName: "Doe", department: "Programming", isAdmin:true}
-    ]
+    ];
+  // catch the onclick event form html
+  selectedStudent?: User;
+  //function to display the student
+  selectStudent(student: User): void {
+    this.selectedStudent = student;
+  }
+
 }
