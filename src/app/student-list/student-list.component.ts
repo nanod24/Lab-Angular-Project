@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import {User} from "../Shared/Modules/user";
 import {NgForOf} from "@angular/common";
-
+import {StudentDetailComponent} from "../student-detail/student-detail.component";
 
 @Component({
   selector: 'app-student-list',
   standalone: true,
-  imports: [NgForOf],
+  imports: [NgForOf, NgForOf, StudentDetailComponent],
   templateUrl: './student-list.component.html',
   styleUrl: './student-list.component.scss'
 })
