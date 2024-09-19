@@ -1,15 +1,18 @@
 import { Component } from '@angular/core';
 import {User} from "../Shared/Modules/user";
+import {NgForOf} from "@angular/common";
+
 
 @Component({
   selector: 'app-student-list',
   standalone: true,
-  imports: [],
+  imports: [NgForOf],
   templateUrl: './student-list.component.html',
   styleUrl: './student-list.component.scss'
 })
 export class StudentListComponent {
-
+//Placeholder for the table
+  displayedColumns:string[]= ['id', 'firstName', 'lastName', 'department', 'isAdmin'];
   userList: User[] =
     [
       {id: 1, firstName: "Matt", lastName: "Haug", department: "Programming", isAdmin: false},
